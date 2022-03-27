@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgorund_1"
+    tools:context=".MainActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/game_over"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/game_over_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="50dp"
+
+            android:gravity="center"
+            android:textColor="#ff0000"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/ckeck_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="50dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/game_over_text" />
+    </android.support.constraint.ConstraintLayout>
+
+    <SurfaceView
+        android:id="@+id/surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/main_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/check_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/check" />
+
+        <TextView
+            android:id="@+id/time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="@string/time" />
+
+        <Button
+            android:id="@+id/exit_btn"
+            style="@style/GradientButton"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:text="@string/exit" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu_view"
+        android:layout_width="249dp"
+        android:layout_height="154dp"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/begin_btn"
+            style="@style/GradientButton"
+            android:text="@string/begin" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/complexity_btn"
+                style="@style/GradientButton"
+                android:text="@string/complexity" />
+
+            <Button
+                android:id="@+id/mode_btn"
+                style="@style/GradientButton"
+                android:text="@string/mode" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/settings_btn"
+                style="@style/GradientButton"
+                android:text="@string/settings" />
+
+            <Button
+                android:id="@+id/close_btn"
+                style="@style/GradientButton"
+                android:text="@string/close" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/complexity_view"
+        android:layout_width="159dp"
+        android:layout_height="154dp"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/easy_btn"
+            style="@style/ActiveGradientButton"
+            android:text="@string/easy" />
+
+        <Button
+            android:id="@+id/middle_btn"
+            style="@style/GradientButton"
+            android:text="@string/middle" />
+
+        <Button
+            android:id="@+id/difficult_btn"
+            style="@style/GradientButton"
+            android:text="@string/difficult" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mode_view"
+        android:layout_width="159dp"
+        android:layout_height="154dp"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/time_limit_btn"
+            style="@style/GradientButton"
+            android:text="@string/time_limit" />
+
+        <Button
+            android:id="@+id/time_increases_killing_btn"
+            style="@style/GradientButton"
+            android:text="@string/time_increases_killing" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/settings_view"
+        android:layout_width="194dp"
+        android:layout_height="151dp"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <CheckBox
+            android:id="@+id/turn_off_sound_checkbox"
+            style="@style/GradientButton"
+            android:text="@string/turn_off_sound" />
+
+        <CheckBox
+            android:id="@+id/turn_off_music_checkbox"
+            style="@style/GradientButton"
+            android:text="@string/turn_off_music" />
+
+        <Button
+            android:id="@+id/setting_back_btn"
+            style="@style/GradientButton"
+            android:text="@string/setting_back" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

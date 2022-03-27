@@ -1,0 +1,31 @@
+<resources>
+    <!--  Основные  -->
+    <string name="app_name">Жукы</string>
+
+    <!--  Меню  -->
+    <string name="begin">Начать</string>
+    <string name="complexity">Сложность</string>
+    <string name="mode">Режим</string>
+    <string name="settings">Настройки</string>
+    <string name="close">Закрыть</string>
+
+    <!--  Главая форма  -->
+    <string name="check">Счет: 0</string>
+    <string name="time">Время: 00:00</string>
+    <string name="exit">Меню</string>
+
+    <!--  Сложность  -->
+    <string name="easy">Легкий</string>
+    <string name="middle">Средний</string>
+    <string name="difficult">Сложный</string>
+
+    <!--  Режимы  -->
+    <string name="endless_levels">Бесконечный уровень</string>
+    <string name="time_limit">Ограничение по времени</string>
+    <string name="time_increases_killing">За убийство время увеливчивается</string>
+
+    <!--  Настройки  -->
+    <string name="turn_off_sound">Выключить звуки</string>
+    <string name="turn_off_music">Выключить музыку</string>
+    <string name="setting_back">Назад</string>
+</resources>
