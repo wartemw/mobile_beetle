@@ -16,9 +16,6 @@ import com.example.beetle.viewManager.form.FormMenu;
 import com.example.beetle.viewManager.form.FormMode;
 import com.example.beetle.viewManager.form.FormSettings;
 
-import java.awt.Shape;
-import java.awt.geom.Arc2D;
-
 public class MainActivity extends AppCompatActivity {
     public static final int BUTTON_TEXT_COLOR = Color.parseColor("#B3B3B3");
     public static final int BUTTON_SELECTED_TEXT_COLOR = Color.parseColor("#8A3A3A");
@@ -50,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         core = new CoreDefault(this);
         core.setScene(new GameManager(this,core));
 
-        displayMenu.setView(DisplayMenuEnum.MAIN);
+        displayMenu.setView(DisplayMenuEnum.MENU);
     }
 
     @Override

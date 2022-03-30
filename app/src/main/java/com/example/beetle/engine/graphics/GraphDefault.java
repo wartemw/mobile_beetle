@@ -12,10 +12,7 @@ import android.graphics.Typeface;
 
 import com.example.beetle.engine.entity.Sprite;
 
-import java.awt.Shape;
-import java.awt.geom.Ellipse2D;
 import java.io.InputStream;
-import java.util.Random;
 
 public class GraphDefault {
 

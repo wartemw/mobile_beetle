@@ -81,11 +81,13 @@ public class GameManager extends SceneDefault {
                             if (mode.equals(FormMode.TIME_INCREASES_KILLING_SELECTED))
                                 timer += new Random().nextInt(5);
                             addCheck(1);
+                            core.playEvilKill();
                             break;
                         case BIND:
                             if (mode.equals(FormMode.TIME_INCREASES_KILLING_SELECTED))
                                 timer -= new Random().nextInt(3);
                             awayCheck(1);
+                            core.playKindKill();
                             break;
                     }
                 }

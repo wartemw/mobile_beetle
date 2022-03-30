@@ -35,6 +35,10 @@ public class FormSettings {
 
     private void turnOffMusicOnClickListener(CompoundButton compoundButton, boolean b) {
         turnOffMusic.setTextColor(b ? MainActivity.BUTTON_SELECTED_TEXT_COLOR : MainActivity.BUTTON_TEXT_COLOR);
+        if(turnOffMusic.isChecked())
+            mainActivity.getCore().pauseBackMusic();
+        else
+            mainActivity.getCore().playBackMusic();
     }
 
     private void settingBackOnClickListener(View view) {
