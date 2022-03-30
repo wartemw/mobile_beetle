@@ -20,8 +20,6 @@ public class MainActivity extends AppCompatActivity {
     public static final int BUTTON_TEXT_COLOR = Color.parseColor("#B3B3B3");
     public static final int BUTTON_SELECTED_TEXT_COLOR = Color.parseColor("#8A3A3A");
 
-    private int width;
-    private int height;
     private CoreDefault core;
     private DisplayMenu displayMenu;
     private FormMenu formMenu;

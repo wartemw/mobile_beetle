@@ -121,6 +121,7 @@ public class GameManager extends SceneDefault {
     @Override
     public void resume() {
         timerSecond = new Timer(1);
+        check = 0;
         String complexity = mainActivity.getFormComplexity().selected;
         switch (complexity) {
             case FormComplexity.EASY_SELECTED:
